@@ -12,7 +12,7 @@ from django.http import HttpResponse
 API_KEY="cb6cff5fe5795c157526f3f52eabeb23"
 ZIP_URL="http://api.openweathermap.org/geo/1.0/zip"
 WEATHER_URL="https://api.openweathermap.org/data/2.5/weather"
-FIVE_DAY_FORECAST_URL = "https://api.openweWAFFLEathermap.org/data/2.5/forecast"
+FIVE_DAY_FORECAST_URL = "https://api.openweathermap.org/data/2.5/forecast"
 
 #Just a landing page to prove we've got the system started and functional
 def index(request):

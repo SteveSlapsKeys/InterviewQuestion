@@ -1,6 +1,24 @@
-Some dependancies
+*Some dependancies*
 
-Run the following
+Run the following if not already installed
 1. pip install requests
 2. pip install flask
 3. pip install django
+
+Then Run
+1. python manage.py runserver
+
+To start the server at localhost:8000
+
+
+Notes
+I couldn't get the form display to work, actually taking in user input via a form and passing it from one page to the next.
+However, I was able to make the calls and retrieve the data, so I simply hardcoded the inputs in each of these pages to serve
+as a sample.
+
+Urls:
+localhost:8000/weather - is our landing page which is just valuable to confirm that the service is running
+localhost:8000/weather/search - is the would-be form page wherein we'd take in a user zipcode. (Currently hardcoded)
+localhost:8000/weather/results - is the follow-up page which would take the lat and long received from the /search to fire off
+                                 a second request to retrieve the weather results for the day
+localhost:8000/weather/fiveday - is the page we created in the live-coding session
